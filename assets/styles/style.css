@@ -111,7 +111,7 @@ header .container nav .menu-social img:hover {
   font-size: 1.8rem;
   line-height: 2.7rem;
   text-align: center;
-  color: rgba(220, 246, 75, 0.8);
+  color: rgba(255,160,122, 0.8);
 }
 
 .s-hero .container .title .techs {
@@ -358,7 +358,7 @@ footer .container .copy {
 }
 
 footer .container .copy {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255,160,122, 0.8);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
