@@ -51,6 +51,7 @@ header .container nav .menu-social img:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
 }
 
 .s-hero .container {
@@ -70,17 +71,26 @@ header .container nav .menu-social img:hover {
   padding-bottom: 6rem;
 }
 
-/*animacao*/
+/*animacao typewriting do h3*/
 .typing-animation{
-  animation: blinkName 1s steps(40) infinite normal;
+  animation: linkCursor 500ms steps(45) infinite normal, 
+              typing 4s steps(45) 1s infinite normal both;
 }
 
-@keyframes blinkName{
-  from{
-    color: var(--primary-color);
+@keyframes typing {
+  from {
+    width: 0;
   }
-  to{
-    color: transparent;
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes linkCursor{
+  from{
+    border-right-color: rgba(212, 106, 70, 0.8);
+  }to{
+    border-right-color: transparent;
   }
 }
 
@@ -91,10 +101,17 @@ header .container nav .menu-social img:hover {
   line-height: 7.7rem;
   text-align: center;
   color: var(--white-color);
+ 
 }
 
-.s-hero .container .title h1 span {
+.s-hero .container .title h3  {
   color: var(--primary-color);
+  font-size: 5.65em;
+  border-right:2px solid rgba(212, 106, 70, 0.8);
+  white-space: nowrap;
+  overflow:hidden;
+  max-width: 40rem;
+  
 }
 
 .s-hero .container .title h2 {
